@@ -1,0 +1,30 @@
+package com.digisoft.actitime.SeleniumAutomation.test;
+
+import io.cucumber.java.en.*;
+
+public class DeleteCustomerSteps {
+	
+	
+	
+	
+	@When("User click on tasks followed by customer and projects page")
+	public void user_click_on_tasks_followed_by_customer_and_projects_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Select name1 and click on delete button")
+	public void select_name1_and_click_on_delete_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Select name2 and click on delete button")
+	public void select_name2_and_click_on_delete_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}
+	
+	

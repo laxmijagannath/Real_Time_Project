@@ -1,0 +1,47 @@
+package com.digisoft.actitime.SeleniumAutomation.test;
+
+import io.cucumber.java.en.*;
+
+public class DeleteCustomerSteps {
+	
+	
+	
+	
+	@Given("User is on Actitime loginpage")
+	public void user_is_on_actitime_loginpage() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("User validates the customer page")
+	public void user_validates_the_customer_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Select the customer and click on delete button")
+	public void select_the_customer_and_click_on_delete_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Customer will be deleted successfully")
+	public void customer_will_be_deleted_successfully() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User click on tasks followed by customers page")
+	public void user_click_on_tasks_followed_by_customers_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+
+}
+	
+	
+	
+	
+	

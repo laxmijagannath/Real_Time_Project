@@ -1,0 +1,20 @@
+package com.digisoft.actitime.SeleniumAutomation.page;
+
+public class DeleteCustomerPage {
+	
+	// Variables to store element IDs or other locators
+	
+	public String taskmenu_byxpath = "//*[@id='topnav']/tbody/tr/td[3]";
+	public String clickcustomer_byclass = "title";
+	public String checkbox_byclass = "img";
+	public String deleteelement_byclass = "deleteButton";
+	
+	// Method to navigate to Delete Customer page
+
+			public void navigateToDeleteCustomer() {
+				
+				
+			}
+
+
+}

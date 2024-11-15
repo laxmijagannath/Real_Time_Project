@@ -1,0 +1,52 @@
+package com.digisoft.actitime.SeleniumAutomation.page;
+
+public class DeleteCustomerPage {
+	
+	// Variables to store element IDs or other locators
+	
+	public String taskmenu_byxpath = "//*[@id='topnav']/tbody/tr/td[3]";
+	public String clickcustomer_byclass = "title";
+	public String checkbox_byclass = "img";
+	public String deleteelement_byclass = "deleteButton";
+	
+	// Method to navigate to Delete Customer page
+
+			public void navigateToDeleteCustomer() {
+				
+				
+			}
+			// Variables to store element locators for the delete process
+			public String customersettings_byxpath="//*[@id=\'cpTreeBlock\']/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div[4]";
+			public String clickaction_byxpath="//*[@id=\"taskListBlock\"]/div[2]/div[1]/div[4]/div/div";
+			public String clickdelete_byxpath="//*[@id=\'taskListBlock\']/div[2]/div[4]/div/div[3]/div";
+			public String comfirmdelete_byid="customerPanel_deleteConfirm_submitBtn";
+			
+			//Method to navigate to the customer
+			public void navigateToCustomerList() throws InterruptedException {
+				click("xpath", customersettings_byxpath);
+				Thread.sleep(2000);
+				click("xpath", clickaction_byxpath); 
+				click("xpath", clickdelete_byxpath);
+				
+			}
+			
+			// Delete the customer
+			public void deleteCustomer(String Customer) {
+				click("id",comfirmdelete_byid);
+			}
+			
+			//Validation for no longer appears in the list
+			public void  isCustomerDeleted(String Customer) {
+				
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+				WebElement successMsgElement = wait.until(ExpectedConditions.visibilityOf(getElement("xpath", "//div[@class='toast']")));
+				System.out.println("Success message displayed : " + successMsgElement.getText());
+				wait.until(ExpectedConditions.invisibilityOf(getElement("xpath", "//div[@class='toast']")));
+				System.out.println("Pop-up disapeared successfully");
+				
+				
+			}
+
+	}
+
+}
